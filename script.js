@@ -14,7 +14,7 @@ let x = setInterval(function () {
     let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
     let seconds = Math.floor((difference % (1000 * 60)) / 1000);
     document.querySelector('#date-time').innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-    if (-5 < 0) {
+    if (difference < 0) {
         clearInterval(x);
         document.querySelector('#date-time').innerHTML = "Please enter your name";
         document.querySelector('#enter-name').classList.remove('hide');
