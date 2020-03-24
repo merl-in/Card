@@ -1,0 +1,331 @@
+body {
+    background-image: url(https://images.unsplash.com/photo-1519972064555-542444e71b54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.h2 {
+    font-size: 8vw;
+    font-family: 'Baloo', cursive;
+    color: blue;
+    position: absolute;
+    top: 6vh;
+    left: 34%;
+    z-index: 0;
+    animation: MnM 20s ease-in infinite;
+}
+img#love {
+    height: 19vh;
+    position: absolute;
+    top: -5vh;
+    left: 27%;
+}
+
+
+.container-fluid {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    min-height: 400px;
+}
+
+#date-time {
+    text-align: center;
+    font-size: 10vw;
+    font-family: 'Baloo', cursive;
+    color: lightgoldenrodyellow;
+}
+
+.hide {
+    display: none;
+}
+
+#enter-name {}
+
+#postman {
+    width: 100%;
+}
+
+#special {
+    font-size: 5vw;
+    color: lightgoldenrodyellow;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    font-family: 'Baloo', cursive;
+    background-image: url(https://images.unsplash.com/photo-1581477588586-82e6b6d73223?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1181&q=80);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding: 20px;
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+
+.letterFade {
+    animation-name: letterFade;
+    animation-duration: 2.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+.fadeOut {
+    animation-name: fadeOut;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+
+.delivery {
+    animation: delivery 2s ease forwards;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+img#toby {
+    bottom: 50vh;
+    left: 0;
+    z-index: 2;
+    width: 30vw;
+    top: -10vh;
+    position: absolute;
+}
+
+
+/*balloons*/
+#balloonContainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+#balloons {
+    list-style: none;
+    display: block;
+    /*position: relative;*/
+    top: 60vh;
+}
+
+#balloons img {
+    width: 10vw;
+    position: absolute;
+    right: 100px;
+}
+
+#b1 {
+    animation: balloonRisePink 8s linear infinite;
+    left: 0;
+    width: 10vw;
+    position: absolute;
+    top: 18vh;
+}
+
+#b2 {
+    animation: balloonRise 7s linear infinite;
+    animation-delay: 0s;
+    left: 35vw;
+    width: 8vw;
+    position: absolute;
+    top: 17vh;
+}
+
+#b3 {
+    animation: balloonRise 6s linear infinite;
+    animation-delay: 250ms;
+    left: 79vw;
+    width: 7vw;
+    position: absolute;
+    top: 18vh;
+}
+
+#b4 {
+    animation: balloonRisePink 8s linear infinite;
+    animation-delay: 4s;
+    left: 57vw;
+    bottom: 53%;
+    width: 10vw;
+    position: absolute;
+    top: 18vh;
+    z-index: 100;
+}
+
+#confet {
+    animation: confetti1 6.8s ease-out infinite;
+    animation-delay: 250ms;
+    width: 50vw !important;
+    left: 40vw;
+    top: -118vh;
+    position: absolute;
+    z-index: 35;
+}
+
+#confet2 {
+    animation: confetti2 6.8s ease-out infinite;
+    animation-delay: 200ms;
+    position: absolute;
+    top: -75vh;
+    width: 30vw;
+    left: 32vw;
+}
+
+
+img#hat {
+    width: 10vw;
+    position: absolute;
+    top: -16vh;
+    transform: rotateZ(39deg);
+    z-index: 3;
+    left: 10%;
+    animation: hatDrop 4s ease-in forwards;
+}
+
+
+/*animations*/
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes letterFade {
+    0% {
+        transform: rotateZ(0deg) scale(1, 1);
+        opacity: 1;
+    }
+
+    100% {
+        transform: rotateZ(45deg) scale(4, 4) translateX(50vw) translateY(15%);
+        opacity: 0;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes delivery {
+    from {
+        background-image: url(https://images.unsplash.com/photo-1519972064555-542444e71b54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+    }
+
+    to {
+        background-image: url(https://i.ytimg.com/vi/Gze1tg7Egq8/maxresdefault.jpg);
+    }
+}
+
+@keyframes balloonRisePink {
+    0% {
+        transform: rotate(0deg) translateY(19vh);
+        opacity: 1;
+    }
+
+    15% {
+        transform: rotate(10deg) translateY(-1vh);
+        opacity: 1;
+    }
+
+    25% {
+        transform: rotate(0deg) translateY(-15vh);
+        opacity: 1;
+    }
+
+    50% {
+        transform: rotate(-10deg) translateY(-30vh);
+        opacity: 1;
+    }
+
+    65% {
+        transform: rotate(0deg) translateY(-40vh);
+        opacity: .9;
+    }
+
+    80% {
+        transform: rotate(10deg) translateY(-54vh);
+        opacity: .7;
+    }
+
+    100% {
+        transform: rotate(0deg) translateY(-75vh);
+        opacity: 0;
+    }
+}
+
+@keyframes balloonRise {
+    0% {
+        transform: translateY(0vh) rotateY(0deg);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(-50vh) rotateY(30deg) rotateZ(20deg);
+        opacity: .7;
+    }
+
+    100% {
+        transform: translateY(-85vh) rotateY(0deg) rotateZ(-30deg);
+        opacity: 0;
+    }
+}
+
+@keyframes confetti1 {
+    0% {
+        transform: translateY(-25vh) rotateZ(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(100vh) translateX(-15vw) scale(20, 15) rotateZ(-5deg);
+        opacity: 0;
+    }
+}
+
+@keyframes confetti2 {
+    0% {
+        transform: translateY(-25vh) rotateZ(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(300vh) translateX(15vw) scale(20, 15) rotateZ(15deg);
+        opacity: 0;
+    }
+}
+
+@keyframes hatDrop {
+    0% {
+        transform: translateY(-120vh) rotateZ(720deg);
+    }
+
+    100% {
+        transform: translateY(0vh) rotateZ(39deg);
+    }
+}
+
+@keyframes MnM {
+    0% {
+        color: blue;
+    }
+    50% {
+        color: rgb(240, 10, 10);
+    }
+    100%{
+        color: blue;
+    }
+}
