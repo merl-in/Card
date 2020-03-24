@@ -2,7 +2,9 @@ body {
     background-image: url(https://images.unsplash.com/photo-1519972064555-542444e71b54?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
     background-repeat: no-repeat;
     background-size: cover;
-
+    background-color: rgb(252, 248, 34);
+    height: 100vh;
+    width:100vw;
 }
 
 .h2 {
@@ -10,7 +12,7 @@ body {
     font-family: 'Baloo', cursive;
     color: blue;
     position: absolute;
-    top: 6vh;
+    bottom: 0px;
     left: 34%;
     z-index: 0;
     animation: MnM 20s ease-in infinite;
@@ -18,8 +20,8 @@ body {
 img#love {
     height: 19vh;
     position: absolute;
-    top: -5vh;
-    left: 27%;
+    bottom: 64px;
+    left: 25%;
 }
 
 
@@ -90,11 +92,10 @@ img#love {
 
 
 img#toby {
-    bottom: 50vh;
+    bottom: 0px;
     left: 0;
     z-index: 2;
     width: 30vw;
-    top: -10vh;
     position: absolute;
 }
 
@@ -113,18 +114,18 @@ img#toby {
     top: 60vh;
 }
 
-#balloons img {
+/*#balloons img {
     width: 10vw;
     position: absolute;
     right: 100px;
-}
+}*/
 
 #b1 {
     animation: balloonRisePink 8s linear infinite;
     left: 0;
     width: 10vw;
     position: absolute;
-    top: 18vh;
+    bottom: 0px;
 }
 
 #b2 {
@@ -133,7 +134,7 @@ img#toby {
     left: 35vw;
     width: 8vw;
     position: absolute;
-    top: 17vh;
+    bottom: 0px;
 }
 
 #b3 {
@@ -142,17 +143,16 @@ img#toby {
     left: 79vw;
     width: 7vw;
     position: absolute;
-    top: 18vh;
+    bottom: 0px;
 }
 
 #b4 {
     animation: balloonRisePink 8s linear infinite;
     animation-delay: 4s;
     left: 57vw;
-    bottom: 53%;
     width: 10vw;
     position: absolute;
-    top: 18vh;
+    bottom: -220px;
     z-index: 100;
 }
 
@@ -161,7 +161,7 @@ img#toby {
     animation-delay: 250ms;
     width: 50vw !important;
     left: 40vw;
-    top: -118vh;
+    top: -200px;
     position: absolute;
     z-index: 35;
 }
@@ -170,7 +170,7 @@ img#toby {
     animation: confetti2 6.8s ease-out infinite;
     animation-delay: 200ms;
     position: absolute;
-    top: -75vh;
+    top: -200px;
     width: 30vw;
     left: 32vw;
 }
@@ -179,7 +179,7 @@ img#toby {
 img#hat {
     width: 10vw;
     position: absolute;
-    top: -16vh;
+    bottom: 100%;
     transform: rotateZ(39deg);
     z-index: 3;
     left: 10%;
@@ -310,11 +310,11 @@ img#hat {
 
 @keyframes hatDrop {
     0% {
-        transform: translateY(-120vh) rotateZ(720deg);
+        transform: translateY(0vh) rotateZ(720deg);
     }
 
     100% {
-        transform: translateY(0vh) rotateZ(39deg);
+        transform: translateY(70vh) rotateZ(39deg);
     }
 }
 
